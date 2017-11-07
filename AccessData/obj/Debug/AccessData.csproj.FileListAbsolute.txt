@@ -1,0 +1,10 @@
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\bin\Debug\AccessData.dll.config
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\bin\Debug\AccessData.dll
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\bin\Debug\AccessData.pdb
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\bin\Debug\EntityFramework.dll
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\bin\Debug\EntityFramework.xml
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\obj\Debug\AccessData.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\obj\Debug\AccessData.dll
+C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\obj\Debug\AccessData.pdb

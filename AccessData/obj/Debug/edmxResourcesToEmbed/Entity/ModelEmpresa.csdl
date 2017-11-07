@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMPRESAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="EMPRESAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CARGO" EntityType="EMPRESAModel.CARGO" />
+    <EntitySet Name="CIUDAD" EntityType="EMPRESAModel.CIUDAD" />
+    <EntitySet Name="EMPLEADO" EntityType="EMPRESAModel.EMPLEADO" />
+    <AssociationSet Name="FK__EMPLEADO__IDCARG__145C0A3F" Association="EMPRESAModel.FK__EMPLEADO__IDCARG__145C0A3F">
+      <End Role="CARGO" EntitySet="CARGO" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EMPLEADO__IDCIUD__15502E78" Association="EMPRESAModel.FK__EMPLEADO__IDCIUD__15502E78">
+      <End Role="CIUDAD" EntitySet="CIUDAD" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADO" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CARGO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HABILITADO" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="EMPLEADO" Relationship="EMPRESAModel.FK__EMPLEADO__IDCARG__145C0A3F" FromRole="CARGO" ToRole="EMPLEADO" />
+  </EntityType>
+  <EntityType Name="CIUDAD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRIPCION" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HABILITADO" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="EMPLEADO" Relationship="EMPRESAModel.FK__EMPLEADO__IDCIUD__15502E78" FromRole="CIUDAD" ToRole="EMPLEADO" />
+  </EntityType>
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PRIMERAPELLIDO" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SEGUNDOAPELLIDO" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="FECHAINGRESO" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EDAD" Type="Int32" Nullable="false" />
+    <Property Name="SALARIO" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IDCARGO" Type="Int32" Nullable="false" />
+    <Property Name="IDCIUDAD" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CARGO" Relationship="EMPRESAModel.FK__EMPLEADO__IDCARG__145C0A3F" FromRole="EMPLEADO" ToRole="CARGO" />
+    <NavigationProperty Name="CIUDAD" Relationship="EMPRESAModel.FK__EMPLEADO__IDCIUD__15502E78" FromRole="EMPLEADO" ToRole="CIUDAD" />
+  </EntityType>
+  <Association Name="FK__EMPLEADO__IDCARG__145C0A3F">
+    <End Type="EMPRESAModel.CARGO" Role="CARGO" Multiplicity="1" />
+    <End Type="EMPRESAModel.EMPLEADO" Role="EMPLEADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CARGO">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="IDCARGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EMPLEADO__IDCIUD__15502E78">
+    <End Type="EMPRESAModel.CIUDAD" Role="CIUDAD" Multiplicity="1" />
+    <End Type="EMPRESAModel.EMPLEADO" Role="EMPLEADO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CIUDAD">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="IDCIUDAD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
