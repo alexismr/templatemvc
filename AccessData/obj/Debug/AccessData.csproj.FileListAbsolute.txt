@@ -8,3 +8,15 @@ C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessD
 C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\obj\Debug\AccessData.csproj.CoreCompileInputs.cache
 C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\obj\Debug\AccessData.dll
 C:\Users\USER\Documents\Visual Studio 2017\Projects\templateMvcAngularjs\AccessData\obj\Debug\AccessData.pdb
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\AccessData.dll.config
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\AccessData.dll
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\AccessData.pdb
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\EntityFramework.dll
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\EntityFramework.xml
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\obj\Debug\AccessData.csproj.CoreCompileInputs.cache
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\obj\Debug\AccessData.dll
+C:\Users\alexismr.IQADMNT01\Desktop\Prueba net\templatemvc\AccessData\obj\Debug\AccessData.pdb

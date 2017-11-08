@@ -10,23 +10,23 @@ using System.Web.Http;
 
 namespace templateMvcAngularjs.Controllers
 {
+    [RoutePrefix("api/Empleado")]
     public class EmpleadoController : ApiController
     {
+        private PersonLogic _clientes = new PersonLogic();
         // GET: api/Empleado
         public IEnumerable<PersonaDTO> GetEmpleados()
         {
-
             try
             {
-                var clientes = new PersonLogic();
-                return clientes.GetEmpleados();
+               
+                return _clientes.GetEmpleados();
             }
             catch (Exception ex)
             {
                 var mensaje = ex;
                 throw;
             }
-
 
         }
 
@@ -37,8 +37,13 @@ namespace templateMvcAngularjs.Controllers
         }
 
         // POST: api/Empleado
-        public void Post([FromBody]string value)
+        [Route("addEmpleado")]
+        [AcceptVerbs("POST")]
+        public Boolean addempledo([FromBody]PersonaDTO persona)
         {
+            var response = _clientes.AgregarCliente(persona);
+            return response;
+
         }
 
         // PUT: api/Empleado/5
@@ -46,9 +51,13 @@ namespace templateMvcAngularjs.Controllers
         {
         }
 
+        [Route("DeleteEmpleado/{id}")]
+        [AcceptVerbs("POST", "DELETE")]
         // DELETE: api/Empleado/5
-        public void Delete(int id)
+        public bool Delete(int id)
         {
+            var response = _clientes.DeleteCliente(id);
+            return response;
         }
     }
 }

@@ -29,7 +29,7 @@ namespace templateMvcAngularjs
             //// remove xlm Formatter
             //config.Formatters.Remove(config.Formatters.XmlFormatter);
 
-            var cors = new EnableCorsAttribute("*", "*", "GET"); // origins, headers, methods
+            var cors = new EnableCorsAttribute("*", "*", "*"); // origins, headers, methods
             config.EnableCors(cors);
 
 

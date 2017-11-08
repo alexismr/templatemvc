@@ -42,13 +42,26 @@ namespace AccessData.Logic
 
 
 
-        public  bool AgregarCliente(EMPLEADO empleado)
+        public  bool AgregarCliente(PersonaDTO empleado)
         {
             using (var contex = new EMPRESAEntities())
             {
-                contex.EMPLEADO.Add(empleado);
+
+
+                var person = new EMPLEADO
+                {
+                    NOMBRE = empleado.NOMBRE,
+                    PRIMERAPELLIDO = empleado.PRIMERAPELLIDO,
+                    SEGUNDOAPELLIDO = empleado.SEGUNDOAPELLIDO,
+                    FECHAINGRESO = DateTime.Now,
+                    EDAD = empleado.EDAD,
+                    SALARIO = empleado.SALARIO,
+                    IDCARGO = 1,
+                    IDCIUDAD = 1
+                };
+                contex.EMPLEADO.Add(person);
                 contex.SaveChanges();
-                if (contex.SaveChanges() > 0)
+                if (person.ID > 0)
                     return true;
                 else
                     return false;

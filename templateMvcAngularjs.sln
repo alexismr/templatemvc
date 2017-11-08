@@ -1,30 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "templateMvcAngularjs", "templateMvcAngularjs\templateMvcAngularjs.csproj", "{BFFF6570-5A65-449E-8B4C-4A6C0B8D0B49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessData", "AccessData\AccessData.csproj", "{372116DF-5085-41AF-8BCE-F975AF220F6D}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Front-end", "..\..\WebSites\Front-end\", "{B0CA556B-D267-49EA-8B8A-D4A8A6BEEF35}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "fronAngularjs", "..\..\..\documents\visual studio 2017\WebSites\fronAngularjs\", "{DC5006FF-E780-4E8C-AE2B-E2CE60AECB05}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_8072"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\Front-end\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8072\"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52233"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\documents\visual studio 2017\WebSites\fronAngularjs\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52233\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_8072"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\Front-end\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8072\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52233"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\documents\visual studio 2017\WebSites\fronAngularjs\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52233\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "8072"
+		VWDPort = "52233"
+		SlnRelativePath = "..\..\..\documents\visual studio 2017\WebSites\fronAngularjs\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
@@ -42,10 +43,10 @@ Global
 		{372116DF-5085-41AF-8BCE-F975AF220F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{372116DF-5085-41AF-8BCE-F975AF220F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{372116DF-5085-41AF-8BCE-F975AF220F6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0CA556B-D267-49EA-8B8A-D4A8A6BEEF35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0CA556B-D267-49EA-8B8A-D4A8A6BEEF35}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0CA556B-D267-49EA-8B8A-D4A8A6BEEF35}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0CA556B-D267-49EA-8B8A-D4A8A6BEEF35}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{DC5006FF-E780-4E8C-AE2B-E2CE60AECB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5006FF-E780-4E8C-AE2B-E2CE60AECB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5006FF-E780-4E8C-AE2B-E2CE60AECB05}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5006FF-E780-4E8C-AE2B-E2CE60AECB05}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
